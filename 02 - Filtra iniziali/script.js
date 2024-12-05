@@ -23,11 +23,9 @@ const getNameByInitial = (array, letter) => {
     return nameByInitial
 }
 
+// Invoca la funzione qui e stampa il risultato in console
+
 let nameToSearch = getNameByInitial(names, "A")
 console.log(nameToSearch)
 
-// Invoca la funzione qui e stampa il risultato in console
-
-
-// console.log()
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
