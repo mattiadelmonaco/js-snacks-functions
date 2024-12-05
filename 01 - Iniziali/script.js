@@ -12,17 +12,17 @@ console.log(names)
  * @returns {String}
  */
 
-const firstCharacter = (array) => {
-    let firstLetter = []
-    for (let i = 0; i < names.length; i++) {
-        firstLetter.push(names[i].substring(0, 1))
+const getFirstCharacter = (array) => {
+    let firstCharacter = []
+    for (let i = 0; i < array.length; i++) {
+        firstCharacter.push(array[i].substring(0, 1))
     }
-    return firstLetter
+    return firstCharacter
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-firstLetter = firstCharacter(names)
+let firstLetter = getFirstCharacter(names)
 console.log(firstLetter)
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
