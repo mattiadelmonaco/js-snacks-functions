@@ -8,15 +8,15 @@ console.log(names)
 /**
  * Get word in an array by word's initial
  * 
- * @param {Array} array 
- * @param {String} letter 
+ * @param {Array} array - array's name
+ * @param {String} letter - initial letter (in "")
  * @returns {string}
  */
 const getNameByInitial = (array, letter) => {
     let nameByInitial = []
     for (let i = 0; i < array.length; i++) {
         let name = array[i]
-        if (name.substring(0, 1) === letter) {
+        if (name.substring(0, 1).toUpperCase() === letter.toUpperCase()) {
             nameByInitial.push(name)
         }
     }
