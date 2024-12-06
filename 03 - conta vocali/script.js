@@ -6,26 +6,26 @@ const word = 'javascript';
 // Dichiara la funzione qui.
 
 /**
- * How many vocals are in a word
+ * How many vowels are in a word
  * 
- * @param {string} word - word to know how many vocals has
+ * @param {string} word - word to know how many vowels has
  * @returns {Number}
  */
 
-const howManyAndWhichVocalsAreIn = (word) => {
-    let vocalsFound = []
+const howManyAndWhichVowelsAreIn = (word) => {
+    let vowelsFound = []
     for (i = 0; i < word.length; i++) {
         let letter = word[i].toUpperCase()
      if (letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U") {
-        vocalsFound.push(letter)
+        vowelsFound.push(letter)
     }
-} return vocalsFound.length, vocalsFound
+} return vowelsFound.length, vowelsFound
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const howManyVocals = howManyAndWhichVocalsAreIn ("javascript")
-console.log (howManyVocals)
+const howManyVowels = howManyAndWhichVowelsAreIn ("javascript")
+console.log (howManyVowels)
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
