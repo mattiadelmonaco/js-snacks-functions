@@ -5,17 +5,17 @@
 
 // // Dichiara la funzione qui.
 
-// /**
-//  * Function to say "hello" to a name
-//  * 
-//  * @param {string} name - name to say hello
-//  * @returns {string}
-//  */
- const helloName = (name) => `Ciao ${name}`
+/**
+* Function to say "hello" to a name
+* 
+* @param {string} name - name to say hello
+* @returns {string}
+*/
+ const helloName = (name) => `Ciao ${userName}`
 
 // // Invoca la funzione qui e stampa il risultato in console
 
-console.log(helloName("Mario"))
+console.log(helloName(userName))
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
 
