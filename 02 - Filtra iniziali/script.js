@@ -12,20 +12,19 @@ console.log(names)
  * @param {String} letter - initial letter (in "")
  * @returns {string}
  */
-const getNameByInitial = (array, letter) => {
-    let nameByInitial = []
+const getWordByInitial = (array, letter) => {
+    let wordsByInitial = []
     for (let i = 0; i < array.length; i++) {
-        let name = array[i]
-        if (name.substring(0, 1).toUpperCase() === letter.toUpperCase()) {
-            nameByInitial.push(name)
+        const currentWord = array[i]
+        if (currentWord[0].toUpperCase() === letter.toUpperCase()) {
+            wordsByInitial.push(currentWord)
         }
     }
-    return nameByInitial
+    return wordsByInitial
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-let nameToSearch = getNameByInitial(names, "A")
-console.log(nameToSearch)
+console.log(getWordByInitial(names, "A"))
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
